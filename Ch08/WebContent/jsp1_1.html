@@ -1,0 +1,36 @@
+<!-- 
+	자바빈(JavaBeans)
+		. JSP에서 사용할 목적으로 만든 클래스
+		. 뷰의 프리젠테이션부분과 비즈니스로직부분을 분리하기위한 목적
+		. 한번 만든 자바빈은 다른 프로그램에서도 재활용할수있다.
+		
+		요청 >>>>>>>>>>>>>>>>>> 처리 >>>>>>>>>>>>>>> 출력(뷰)
+							(비즈니스로직)         (프리젠테이션)
+		html				 java+jsp			 html/jsp
+				
+				- ~.java(클래스)
+					. get~, set~ 메소드를 정의해 놓는다.
+					. 생성자에 매개변수가 있는 생성자를 구현하려면 기본 생성자를 만들어 놓아야한다.
+					. get~메소드에는 파라미터가 없어야한다. 리터나입을 가져야한다.
+					. set~메소드에는 하나의파라미터값이 있어야한다.
+					. 이외는 사용자 정의에 의한다.
+				- jsp
+			  (jsp:useBean id = "" class= "" scope= "")
+			  (jsp:setProperty name="" value="" /)
+			  (jsp:getProperty name="" /)
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="jsp1_2.jsp" method="post">
+		서버로 전송할값 : <br> <input type="text" name="msg"><br><br>
+		<input type="submit" value="전송">&nbsp;&nbsp;
+		<input type="reset" value="취소">
+	
+	</form>
+</body>
+</html>

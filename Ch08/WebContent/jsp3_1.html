@@ -1,0 +1,31 @@
+<!-- 
+	(입력)			(로직처리)			(프레젠테이션)
+	상품코드			useBean					
+	상품명				|				1) useBean 이용출력
+	상품가격			입력값 객체생성			
+	재고수량				|				2) request이용하여 출력
+					1)출력
+					2)<a href="">
+						- 값을 가지고간다.
+
+
+
+
+
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="jsp3_2.jsp">
+		상품코드 : <input type="text" name="code" required><br>
+		상품명 : <input type="text" name="name" required><br>
+		상품가격 : <input type="text" name="price" required><br>
+		재고수량 : <input type="text" name="ea" required><br>
+		<input type="submit" value="등록">
+	</form>
+</body>
+</html>

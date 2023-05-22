@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table {
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 300px;
+}
+	td {
+	border: 1px solid black;
+	}
+	input {
+	border: 0;
+}
+#abc{
+height: 400px;
+}
+</style>
+</head>
+<body>
+	<h3>게시판</h3>
+	<form action="jsp4_2.jsp">
+		<table>
+			<tr><td>제목</td><td><input type="text" name="title"></td></tr>
+			<tr><td>작성자</td><td><input type="text" name="name"></td></tr>
+			<tr><td>내용</td><td><input id="abc" type="text" name="contents"></td></tr>
+			<tr><td>비밀번호</td><td><input type="password" name="pw"></td></tr>
+			<tr><td><input type="submit" value="확인"><input type="reset" value="취소"></td></tr>
+		</table>
+	</form>
+</body>
+</html>
