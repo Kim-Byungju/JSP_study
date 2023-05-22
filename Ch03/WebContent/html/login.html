@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<title>Insert title here</title>
+<style type="text/css">
+	table{
+		border: 1px solid black;
+		margin: 0 auto;
+	}
+	tr, td {
+		border: 1px solid black;
+	}
+	
+	input{
+		height: 50px;
+		width: 300px;
+		border: 0;
+	}
+	.btn{
+		width: 60px;
+	}
+</style>
+</head>
+<body>
+	 <div class="container-md mt-5 text-center">
+	 <h3>로그인 창</h3>
+	 <form action="../jsp/jsp4.jsp" method="get" name="frm" onsubmit="">
+	 	<table>
+	 		<tr>
+	 			<td>아이디</td><td><input type="text" name="user_id"></td>
+	 		</tr>
+	 		<tr>
+	 			<td>비밀번호</td><td><input type="text" name="user_pw"></td>
+	 		</tr>
+	 		<tr align="center">
+	 			<td colspan="2"><input class="btn" type="submit" value="로그인">&nbsp;
+				<input class="btn" type="reset" value="취소"></td>
+	 		</tr>
+	 	</table>
+	 </form>
+	</div>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.6.4.js"></script>
+</body>
+</html>

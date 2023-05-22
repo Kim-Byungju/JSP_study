@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<title>Insert title here</title>
+<style type="text/css">
+	table {
+	padding: 0;
+	border-collapse: collapse;
+}
+	input {
+	border: 0;
+	width: 400px;
+}
+	.ch{
+	width: 10px;
+}
+	.btn{
+	width: 60px;
+	background-color: lightgray;
+}
+	textarea{
+	border: 0;
+	margin: 0;
+	height: 100%;
+}
+</style>
+</head>
+<body>
+	<div class="container-md mt-5 text-center">
+		<h3>회원정보</h3>
+		<form action="../jsp/jsp5.jsp" method="get">
+			<table border="1" class="mt-3" style="margin: 0 auto;">
+				<tr>
+					<td>아 이 디</td><td><input type="text" name="id"></td>
+				</tr>
+				<tr>
+					<td>비밀번호</td><td><input type="password" name="pw"></td>
+				</tr>
+				<tr>
+					<td>비밀번호 확인</td><td><input type="password" name="pw2"></td>
+				</tr>
+				<tr>
+					<td>취미</td>
+					<td align="left">
+						<input class="ch" type="checkbox" name="hobby" value="climbing">등산&nbsp;&nbsp;
+						<input class="ch" type="checkbox" name="hobby" value="sports">운동&nbsp;&nbsp;
+						<input class="ch" type="checkbox" name="hobby" value="reading">독서&nbsp;&nbsp;
+						<input class="ch" type="checkbox" name="hobby" value="coding">코딩&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td>종 교</td>
+					<td align="left">
+						<select name="religion">
+							<option value="buddhism">불교
+							<option value="atheism">무교
+							<option value="christaianity">불교
+							<option value="catholicism">천주교
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>자기소개</td>
+					<td>
+						<textarea rows="10" cols="49" name="introduction"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input class="btn" type="submit" value="전송">&nbsp;&nbsp;
+						<input class="btn" type="reset" value="취소">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>	
+</body>
+</html>

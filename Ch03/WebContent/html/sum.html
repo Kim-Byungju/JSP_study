@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 테이블에대한 스타일 설정 */
+	table {
+		border: 1px;
+	}
+</style>
+<script type="text/javascript">
+	/* 유효성검사 - 숫자가 아니거나 없거나 하면 안됨 */
+	function chk() {
+		if(!frm.num.value){
+			alert("숫자를 입력하세여ㅛ");
+			frm.num.focus();
+			return false;
+		}
+		if(inNan(frm.num.value)){
+			alert("숫자가아닙니다.");
+			frm.num.value="";
+			return false;
+		}
+		return true;
+		
+		
+	}
+	
+
+	
+</script>
+</head>
+<body>
+	<!-- ? 까지 더해주세요
+	table로 입력폼을 구현하여 전송 -->
+	<h2>input까지 더하기</h2>
+	<hr>
+	<form action="../jsp/jsp3.jsp" name="frm" method="get" onsubmit="return chk()">
+		<table>
+			<tr>
+				<td>
+					<input type="number" name="num" value="">까지 더해주세요!
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="확인">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

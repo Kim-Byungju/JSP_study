@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Ch06</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+<!--   파라미터 초기값을 설정할 수있다.application.getInitmeter()로 읽는다. -->
+<context-param>
+	<param-name>name</param-name>
+	<param-value>홍길동</param-value>
+</context-param>
+<context-param>
+	<param-name>age</param-name>
+	<param-value>30</param-value>
+</context-param>
+<context-param>
+	<param-name>gender</param-name>
+	<param-value>남자</param-value>
+</context-param>
+<context-param>
+	<param-name>sports</param-name>
+	<param-value>축구 배구 농구 야구 놀기 웃기</param-value>
+</context-param>
+  
+</web-app>
