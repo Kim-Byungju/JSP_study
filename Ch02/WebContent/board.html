@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	제목/작성자는 필수 유효성 검사
+</script>
+</head>
+<body>
+	<h2>게시판</h2>
+	<form action="Board" name="frm" method="post" onsubmit="">
+		
+		<table border="1">
+			<tr><th>제 목</th><td><input type="text" name="title"></td></tr>
+			<tr><th>작성자</th><td><input type="text" name="name"></td></tr>
+			<tr><th>내 용</th><td><textarea row="5" cols="30" name="content"></textarea></td></tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="전송">
+					<input type="reset" value="취소">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

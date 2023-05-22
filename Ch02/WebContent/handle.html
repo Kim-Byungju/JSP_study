@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 
+	Get
+		- 전송할 데이터를 문자열 형태로 URL의 뒤에 인수로 붙여서 전송하는 방식
+		- 보안성이없어 누구나 전송내용을 볼수있다.
+		- 용량이적을경우 사용.
+		- 서버의 처리가 지연되면 중복해서 요청되는 경우가 발생될수있다.
+		
+	Post 
+		- 파일의 형태로 전송됨으로써 URL상에 나타나지않아 보안성이 있다.
+		- Get방식에 비해 대용량의 데이터를 전송할때 사용한다.
+
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function fn_validate() {
+		let frm = document.frm;
+		let user_id = frm.user_id;
+		let user_pw = frm.user_pw.value;
+		
+		if((user_id.length===0) || (user_id==="")||(user_pw.length===0||user_pw==="")){
+			alert("아이디,비번를 입력해라.");
+		}
+		else {
+			frm.method="post";
+			frm.action="handle";
+			frm.submit();
+		}
+	}
+
+</script>
+</head>
+<body>
+	<h2>로그인</h2>
+	<br>
+	<form action="handle" method="get" name="frm" onsubmit="">
+		아 이 디 : <input type="text" name="user-id"><br>
+		비밀번호 : <input type="password" name="user-pw"><br>
+		<input type="hidden" name="user_address" value="서울시 성북구">
+		<input type="button" onclick="fn_validate()" value="로그인">
+		<input type="reset" value="다시입력">
+	</form>
+</body>
+</html>
