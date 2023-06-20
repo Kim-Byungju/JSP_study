@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function chk() {
+		if(!frm.code.value) {
+			alert("코드를 입력해주세요!");
+			frm.code.focus();
+			return false;
+		}
+		if(isNaN(frm.code.value)){
+			alert("숫자입력바랍니다.");
+			frm.code.focus;
+			return false;
+		}
+		return true;
+	}
+	
+</script>
+</head>
+<body>
+	<h3>상품코드 조회</h3>
+	<form action="jsp6_2DBLogic.jsp" name="frm" onsubmit="return chk()">
+		코드 : <input type="text" name="code" ><p>
+		<input type="submit" value="조회">
+	</form>
+</body>
+</html>

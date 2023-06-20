@@ -1,0 +1,5 @@
+null=model.Member_null
+info=model.Member_info
+join=model.Member_join
+login=model.Member_login
+update=model.Member_update

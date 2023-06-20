@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table {
+	border-collapse: collapse;
+	padding: 1px;
+}
+input {
+	border: none;
+	text-align: center;
+}
+input:focus {
+	outline: none;
+	background: lightgray;
+}
+td#btn{
+	background-color: lightgray;
+	height: 5px;
+	text-align: center;
+	box-shadow: 1px 1px gray;
+}
+
+	
+</style>
+</head>
+<body>
+	<h3>회원가입</h3>
+	<form action="jsp5_3.jsp" method="post">
+		<table border="1">
+			<tr><th>아이디</th><td><input type="text" name="id"></td></tr>
+			<tr><th>비밀번호</th><td><input type="password" name="pass"></td></tr>
+			<tr><th>이 름</th><td><input type="text" name="name"></td></tr>
+			<tr><th>전화번호</th><td><input type="text" name="phone"></td></tr>
+			<tr><th>주소</th><td><input type="text" name="address"></td></tr>
+			<tr>
+				<td id="btn" colspan="2">
+					<input type="submit" value="등록">&nbsp;&nbsp;
+					<input type="reset" value="취소">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
